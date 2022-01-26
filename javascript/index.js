@@ -18,6 +18,8 @@ function printTime() {
  minUniElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getMinutes())[1]
  secDecElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getSeconds())[0]
  secUniElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getSeconds())[1]
+ milDecElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getMilisec())[0]
+ milUniElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getMilisec())[1]
 }
 
 function printMinutes() {
@@ -30,8 +32,10 @@ function printSeconds() {
 
 // ==> BONUS
 function printMilliseconds() {
-  // ... your code goes here
+  milDecElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getMilisec())[0]
+  milUniElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getMilisec())[1]
 }
+
 
 function printSplit() {
 
